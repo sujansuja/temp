@@ -14,6 +14,9 @@ body{
     min-width: 260px;
 }
 header{
+    position: relative;
+    /* animation: move 3s ease-in-out; */
+    /* left: -650px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +25,17 @@ header{
     max-width: 80%;
     margin: 0 auto;
 }
-
+@keyframes move {
+    0%{
+        left: -650px
+    }
+    95%{
+        left: 10px;
+    }
+    100%{
+        left: 0;
+    }
+}
 header .heading h2{
     text-align: center;
 }

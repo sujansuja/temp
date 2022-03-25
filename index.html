@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Website</title>
 </head>
-<body>
+<body onload="animi()">
     <header>
         <div class="heading">
             <h2>The Responsive Website</h2>
@@ -29,5 +29,11 @@
     <footer>
         This is footer
     </footer>
+    <!-- <button onclick="animi()">Press</button> -->
+    <script>
+        function animi(){
+            document.querySelector("header").style.animation = "move 3s ease-in-out"
+        }
+    </script>
 </body>
 </html>
